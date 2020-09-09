@@ -1,0 +1,59 @@
+.container {
+
+    display:grid;
+    grid-template-rows:repeat(6,1fr);
+    grid-template-columns:0.3fr 1fr 0.3fr;
+    grid-template-areas:
+    ". header"
+    "main main"
+    "footer footer";
+    
+}
+
+
+
+ .container > header {
+
+    width:501px;
+    height:544px;
+    grid-area:header;
+    display:flex;
+    flex-direction:column;
+    background-color:#C7DDEA;
+    justify-content:flex-start;
+    align-items:center;
+    padding:5px;   
+   
+    
+    
+
+}
+
+header > h1 {
+    
+    font-family:Frank Ruhl Libre;
+    font-style:normal;
+    font-weight:900;
+    font-size:45px;
+    line-height:100%;
+    letter-spacing:-0.02em;
+    width:314px;
+    margin:5px;
+    
+    
+    
+}
+
+header > p {
+
+    font-family:fira sans;
+    font-style:normal;
+    font-weight:bold;
+    font-size:14px;
+    line-height:24px;
+    color:rgba(0, 0, 0, 0.6);
+    width:268px;
+    margin:5px;
+    margin-left:-30px;
+    
+}
