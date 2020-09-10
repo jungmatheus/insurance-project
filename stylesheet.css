@@ -2,11 +2,8 @@
 
     display:grid;
     grid-template-rows:repeat(6,1fr);
-    grid-template-columns:0.3fr 1fr 0.3fr;
-    grid-template-areas:
-    ". header"
-    "main main"
-    "footer footer";
+    grid-template-columns:200px 501px 501px;
+    gap:10px;
     
 }
 
@@ -14,24 +11,22 @@
 
  .container > header {
 
+    padding:5px;    
+
+}
+
+.background1 {
+    background-color:#C7DDEA;
     width:501px;
     height:544px;
-    grid-area:header;
-    display:flex;
-    flex-direction:column;
-    background-color:#C7DDEA;
-    justify-content:flex-start;
-    align-items:center;
-    padding:5px;   
-   
-    
-    
+    grid-row:1;
+    grid-column:4;
 
 }
 
 header > h1 {
     
-    font-family:Frank Ruhl Libre;
+    font-family: 'Frank Ruhl Libre', serif;
     font-style:normal;
     font-weight:900;
     font-size:45px;
@@ -46,9 +41,7 @@ header > h1 {
 
 header > p {
 
-    font-family:fira sans;
-    font-style:normal;
-    font-weight:bold;
+    font-family:'Fira Sans', sans-serif;
     font-size:14px;
     line-height:24px;
     color:rgba(0, 0, 0, 0.6);
@@ -57,3 +50,16 @@ header > p {
     margin-left:-30px;
     
 }
+
+header > p > span {
+    color:white;
+}
+
+ .container h2 {
+
+    background-color:#F17949;
+    width:501px;
+    height:272px;
+    grid-row:1;
+    grid-column:3;
+ }
