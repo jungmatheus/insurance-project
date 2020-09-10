@@ -5,26 +5,21 @@
     grid-template-columns:200px 501px 501px;
     gap:10px;
     
+    
 }
 
-
-
- .container > header {
-
-    padding:5px;    
-
-}
 
 .background1 {
     background-color:#C7DDEA;
     width:501px;
     height:544px;
     grid-row:1;
-    grid-column:4;
+    grid-column:2;  
+    
 
 }
 
-header > h1 {
+.background1 h1 {
     
     font-family: 'Frank Ruhl Libre', serif;
     font-style:normal;
@@ -33,22 +28,17 @@ header > h1 {
     line-height:100%;
     letter-spacing:-0.02em;
     width:314px;
-    margin:5px;
-    
-    
+
     
 }
 
-header > p {
+.background1 > p {
 
     font-family:'Fira Sans', sans-serif;
     font-size:14px;
     line-height:24px;
     color:rgba(0, 0, 0, 0.6);
     width:268px;
-    margin:5px;
-    margin-left:-30px;
-    
 }
 
 header > p > span {
