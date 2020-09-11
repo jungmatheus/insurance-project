@@ -1,10 +1,16 @@
+
+.wrapper {
+
+    max-width:1000px;
+    margin:auto;
+}
+
+
 .container {
 
     display:grid;
-    grid-template-rows:repeat(6,1fr);
-    grid-template-columns:200px 501px 501px;
-    gap:10px;
-    
+    grid-auto-rows:minmax(auto, 272px);
+    grid-template-columns: auto auto;
     
 }
 
@@ -13,11 +19,45 @@
     background-color:#C7DDEA;
     width:501px;
     height:544px;
-    grid-row:1;
-    grid-column:2;  
+    grid-row:1 / span 2;
+    grid-column:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     
 
 }
+
+.background2 {
+    grid-row:1;
+    grid-column:2;
+}
+
+.background2 h2, .background3 h2{
+    margin:0;
+}
+.background3{
+    grid-row: 2;
+    grid-column:2;
+}
+
+#frame1 {
+    grid-row:1;
+    grid-column:1;
+    background-color:#F17949;
+    width:501px;
+    height:272px;   
+}
+
+#frame2 {
+
+    grid-row:2;
+    grid-column:1;
+    width:501px;
+    height:272px;
+    background-color:#FAB131;
+}
+
 
 .background1 h1 {
     
@@ -28,7 +68,6 @@
     line-height:100%;
     letter-spacing:-0.02em;
     width:314px;
-
     
 }
 
@@ -41,15 +80,27 @@
     width:268px;
 }
 
-header > p > span {
+.background1 > p > span {
     color:white;
 }
 
- .container h2 {
+ #frame1 > h2 {
 
-    background-color:#F17949;
-    width:501px;
-    height:272px;
-    grid-row:1;
-    grid-column:3;
+    font-family:'Frank Ruhl Libre', serif;
+    font-size:32px;
+    line-height:41px;
+    color:#FFFFFF;
+    letter-spacing:-0.02em;
  }
+
+ #frame2 > h2 {
+
+    font-family:'Frank Ruhl Libre', serif;
+    font-size:32px;
+    line-height:41px;
+    color:#FFFFFF;
+    letter-spacing:-0.02em;
+
+ }
+
+ 
